@@ -1,10 +1,15 @@
 import Head from 'next/head'
+
+//載入css
 import styles from '@/styles/Home.module.css'
+
+//next提供的元件 Link 類似a標籤
 import Link from 'next/link'
 
 
 export default function Home() {
   return (
+    //必須有一個最外層例如<div>，如果沒有可以用<>替代
     <>
       <Head>
         <title>Next by Sean</title>
@@ -12,7 +17,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      {/* 獨立的className 從module.css來的 */}
       <h1 className={styles.title}>Sean</h1>
+      {/* 看要連到哪一頁 首頁為href="/" */}
       <Link href="/page" className={styles.links}>點我</Link>
     </>
   )
