@@ -1,7 +1,6 @@
 import InsideStyles from '@/styles/Inside.module.css'
-import {useState, useRef} from 'react'
+import {useState} from 'react'
 
-// import Page from './api'
 const Button = () => {
   return(
     <button>Click</button>
@@ -9,8 +8,6 @@ const Button = () => {
 }
 
 const Page = ({ data, className }) => {
-  // Render data...
-  console.log(data.abilities);
   return (
     <>
       {data.abilities.map((ability, index) => (
