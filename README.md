@@ -10,5 +10,3 @@ npm run dev
 ## 第一步：index.js 請看檔案註解
 
 ## 第二步：page.js 請看檔案註解
-
-[Demo 連結](https://vercel-test-blond-theta.vercel.app/page)
